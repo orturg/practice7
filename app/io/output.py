@@ -1,6 +1,9 @@
 def write_to_console(text):
-    pass
+    """Функція для виводу тексту у консоль,"""
+    print(text)
 
 
-def write_to_file(file_path, text):
-    pass
+def write_to_file(filename, text):
+    """Функція для запису до файлу за допомогою вбудованих можливостей python"""
+    with open(filename, "a", encoding="utf-8") as file:
+        file.write(text + "\n")
